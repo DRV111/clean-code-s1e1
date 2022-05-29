@@ -25,12 +25,6 @@ body {
 .info__link {
   font-family:fantasy, cursive;
 }
-
-@media (max-width: 768px) {
-  .info {
-    text-align: center;
-  }
-}
 .wrapper {
   display:block;
   width:500px;
@@ -79,12 +73,12 @@ body {
 .task-list__item-input,
 .task-add__input {
   margin: 0;
-  width: 226px;
-  font-size: 18px;
-  line-height: 18px;
-  height: 21px;
-  padding: 0 9px;
-  border: 1px solid #ddd;
+  width:226px;
+  font-size:18px;
+  line-height:18px;
+  height:21px;
+  padding:0 9px;
+  border:1px solid #ddd;
   background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
@@ -136,14 +130,19 @@ body {
 }
 
 /* Edit Task */
-ul li input[type='text'] {
+.task-list .task-list__item .task-list__item-input {
   display: none;
 }
-.edit-item .task-list__item-input {
+.task-list .edit-item .task-list__item-input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-item .task-list__item-label {
+.task-list .edit-item .task-list__item-label {
   display: none;
+}
+@media (max-width: 768px) {
+  .info {
+    text-align: center;
+  }
 }
